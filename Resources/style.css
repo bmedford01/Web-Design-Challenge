@@ -1,0 +1,63 @@
+.nav-item {
+    font-family: 'Georgia'
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+  display: grid;
+  grid-gap: 1rem;
+  width: 33.33%;
+  text-align: center;
+  color: black;
+  font-family: 'Georgia';
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.h1 {
+    font-family: 'Georgia';
+    font-size: 'larger';
+    color:black;
+}
+
+.container {
+    font-family: 'Georgia';
+    color:black;
+    background-color: #f8f8f8;
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 500px) {
+    .column {
+      width: 75%;
+      display: flex;
+      margin-bottom: 20px;}
+
+    .card {
+        repeat(auto-fit, minmax(300px, 1fr));
+    }
+};
